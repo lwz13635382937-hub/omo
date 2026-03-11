@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT 自动备份</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>ChatGPT 自动备份 (MVP)</h1>
+
+      <section class="card">
+        <p><strong>插件状态：</strong><span id="enabledState">加载中...</span></p>
+        <p><strong>当前会话：</strong><span id="sessionId">加载中...</span></p>
+        <p><strong>缓存状态：</strong><span id="cacheState">加载中...</span></p>
+      </section>
+
+      <section class="actions">
+        <button id="btnRefresh">刷新状态</button>
+        <button id="btnExport">手动导出 JSON</button>
+        <button id="btnClear" class="danger">手动清理缓存</button>
+      </section>
+
+      <p id="tips" class="tips"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
